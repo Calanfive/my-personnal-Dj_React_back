@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "musiques",
+  "info": {
+    "singularName": "musique",
+    "pluralName": "musiques",
+    "displayName": "musique"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "lien_youTube": {
+      "type": "string"
+    },
+    "chanteur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chanteur.chanteur"
+    },
+    "favoris": {
+      "type": "boolean"
+    },
+    "dateDeSortie": {
+      "type": "date"
+    },
+    "couleur_de_fond": {
+      "type": "string"
+    }
+  }
+}
