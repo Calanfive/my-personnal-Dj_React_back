@@ -400,6 +400,7 @@ export interface ApiMusiqueMusique extends Schema.CollectionType {
     singularName: 'musique';
     pluralName: 'musiques';
     displayName: 'musique';
+    description: '';
   };
   options: {
     draftAndPublish: true;
